@@ -3,6 +3,7 @@ import "./App.css";
 import MovieCard from "./components/MovieCard/MovieCard.component";
 import NavBar from "./components/NavBar/NavBar.component";
 import Header from "./components/Header/Header.component";
+import Footer from "antd/lib/layout/layout";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar/>
       <Header/>
       <MovieCard />
+      <Footer/>
     </div>
   );
 }
