@@ -1,17 +1,46 @@
 import React, { useState, useEffect } from "react";
+import { Card, Button } from "react-bootstrap";
 
 export default function MovieCard() {
-  const [movie, setMovie] = useState(null);
+  const [movie, setMovie] = useState([]);
   const api_key = "944143a810402073e91619e119fa95ef";
   //
+
   useEffect(() => {
     getInfo();
-  }, []);
+  }, [])
+
+
   const getInfo = () => {
-    fetch(`https://api.themoviedb.org/3/movie/157336?api_key=${api_key}`).then(
-      (response) => console.log(response)
-    );
-  };
+    fetch(`http://localhost:2000/api/movie`).then(
+      response => response.json() 
+    )
+    .then(data => {
+      setMovie(data.movie)
+
+    })
+  }
+
   //
-  return <h1>MovieCard</h1>;
+  return  <>
+            <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top"/>
+              <Card.Body>
+                <Card.Title>{movie.title}</Card.Title>
+                <Card.Text>
+                  
+                </Card.Text>
+                <Button variant="primary">Go somewhere</Button>
+              </Card.Body>
+            </Card>
+          </>
 }
+
+// const getInfoPerson = () => {
+//   fetch("https://randomuser.me/api/%22)
+//     .then((response) => response.json())
+//     .then((data) => {
+//       setResults(data.results);
+//       console.log(data.results);
+//     });
+// };
