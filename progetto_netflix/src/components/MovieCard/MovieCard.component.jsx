@@ -14,19 +14,24 @@ export default function MovieCard() {
     fetch(`http://localhost:2000/api/movie`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        setMovie(data);
         //
       });
   };
+
+  // VALORI UTILI
+  const imagePath = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
 
   //
   return (
     <>
       <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" />
+        <Card.Img variant="top" src={imagePath} />
         <Card.Body>
-          <Card.Title></Card.Title>
-          <Card.Text></Card.Text>
+          <Card.Title>{movie.title}</Card.Title>
+          <Card.Subtitle>{movie.tagline}</Card.Subtitle>
+          <Card.Subtitle>{movie.runtime}</Card.Subtitle>
+          <Card.Text>{movie.overview}</Card.Text>
         </Card.Body>
       </Card>
     </>

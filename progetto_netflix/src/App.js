@@ -4,27 +4,28 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // COMPONENTS
-import MovieCard from "./components/MovieCard/MovieCard.component";
-import NavBar from "./components/NavBar/NavBar.component";
-import Header from "./components/Header/Header.component";
-import Footer from "./components/Footer/Footer.component";
+import Layout from "./pages/Layout/Layout.page";
 
 // PAGES
+import Dashboard from "./pages/Dashboard/Dashboard.page";
+import Landing from "./pages/Landing/Landing.page";
+import Login from "./pages/Login/Login.page";
 
 //
 export default function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        // ROUTES
-        <NavBar />
-        <Header />
-        <MovieCard />
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="landing" element={<Landing />} />
+            <Route path="login" element={<Login />} />
+
+            <Route paht="*" element={<h1>404</h1>} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
