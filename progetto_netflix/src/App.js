@@ -1,20 +1,30 @@
-import logo from "./logo.svg";
+// PACKAGES
 import "./App.css";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// COMPONENTS
 import MovieCard from "./components/MovieCard/MovieCard.component";
 import NavBar from "./components/NavBar/NavBar.component";
 import Header from "./components/Header/Header.component";
 import Footer from "./components/Footer/Footer.component";
 
-function App() {
+// PAGES
+
+//
+export default function App() {
   return (
-    <div className="App">
-      
-      <NavBar/>
-      <Header/>
-      <MovieCard />
-      <Footer/>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        // ROUTES
+        <NavBar />
+        <Header />
+        <MovieCard />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
-export default App;
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
