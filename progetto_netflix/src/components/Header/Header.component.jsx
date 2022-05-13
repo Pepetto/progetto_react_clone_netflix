@@ -59,7 +59,7 @@ export default function Header () {
                             </div>
                         </Col>
                         <div>
-                        <Link to="" className="btn btn-info" >Abbonati</Link>
+                        <Link to="" className="btn btn-info mt-5 mb-5" >Abbonati</Link>
                         </div>
                     </Row>
                     <h2>Disponibile sui tuoi dispositivi preferiti</h2>
