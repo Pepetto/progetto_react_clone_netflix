@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 export default function Header () {
     return (
             <>
-                <Container> 
-                    <Row className="header-image "> 
+                <Container fluid> 
+                    <Row className="header-image altezza"> 
                         <Col> 
-                            <Row >
-                                <Col className="d-flex justify-content-start">
+                            <Row className="mt-3" >
+                                <Col className="d-flex justify-content-start ">
                                     <img src="https://react-bootstrap.github.io/logo.svg" width="30" height="30" className="d-inline-block align-top" alt="React Bootstrap logo"/>
                                 </Col>
                                 <Col className="d-flex justify-content-end">
-                                    <Link className="btn btn-primary" to="/login">Login</Link>
+                                    <Link className="btn btn-danger w-25" to="/login">Login</Link>
                                 </Col>
                             </Row>
                             <Card.Body className="header-color">
@@ -28,18 +28,18 @@ export default function Header () {
                                     <h3 className="mt-3">Vuoi guardare Netflix? Inserisci l'indirizzo email per abbonarti o riattivare il tuo abbonamento.</h3>
                                 </div>
                                 <div>
-                                    <input type='e-mail' ></input>
+                                    <input type='e-mail' className="w-25" ></input>
                                     <Link to="/login" className="btn btn-danger"> Click </Link>     
                                 </div>
                             </div>
                             </Card.Body> 
                         </Col>
                     </Row>
-                    <Row className="mt-5">
+                    <Row className="mt-5 pt-5 altezza">
                         <Col className="prova">
                             {/* <img src="/src/img/35228.jpg" alt="QUALCOSA" /> */}
                         </Col>
-                        <Col>
+                        <Col className="ms-5">
                             <div>
                                 <h2>Guarda come, quando e con chi vuoi</h2>
                             </div>
@@ -59,23 +59,26 @@ export default function Header () {
                             </div>
                         </Col>
                         <div>
-                        <Link to="" className="btn btn-info mt-5 mb-5" >Abbonati</Link>
+                        <Link to="" className="btn btn-info mt-5 mb-5 w-25 h-25 fs-2" >Abbonati</Link>
                         </div>
                     </Row>
                     <h2>Disponibile sui tuoi dispositivi preferiti</h2>
-                    <Row xxl={4} xl={4} lg={4} md={2} sm={1} xs={1} >
+                    <Row xxl={4} xl={4} lg={4} md={2} sm={1} xs={1} className="mt-5">
                         
                         <Col>
-                        <img src="img/original.png" alt="original" />
+                        <img src="" alt="TV" />
                            <h3>Amazon Fire TV Dispositivi con Android TV Apple TV Chromecast TV LG Samsung </h3>
                         </Col>
                         <Col>
+                            <img src="img/original.png" alt="PC" />
                             <h3>Chrome OS MacOS PC Windows</h3>
                         </Col>
                         <Col>
+                            <img src="img/original.png" alt="Tablet" />
                             <h3>Tablet Amazon Fire Telefoni e tablet Android iPhone e iPad</h3>
                         </Col>
                         <Col>
+                            <img src="img/original.png" alt="Consol" />
                             <h3>PS4 PS5 Xbox One Xbox Series X Xbox Series S</h3>
                         </Col>
                     </Row>

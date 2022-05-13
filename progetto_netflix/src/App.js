@@ -21,7 +21,6 @@ export default function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Dashboard />} />
             <Route path="login" element={<Login />} />
-
             <Route paht="*" element={<h1>404</h1>} />
           </Route>
         </Routes>

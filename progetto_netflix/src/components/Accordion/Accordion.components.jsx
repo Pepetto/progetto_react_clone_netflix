@@ -7,7 +7,7 @@ export default function AccordionLanding () {
                 <Container className="mt-5 mb-3">
                 <Row>
                     <h2>Domande frequenti</h2>
-                    <Col>
+                    <Col className="mt-5">
                     <Accordion defaultActiveKey="0" className="text-start">
                         <Accordion.Item eventKey="0" className="bg bg-dark">
                             <Accordion.Header >Che cos'è NETFLEX?</Accordion.Header>
