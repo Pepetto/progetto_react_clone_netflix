@@ -6,20 +6,20 @@ export default function Header () {
     return (
             <>
                 <Container> 
-                    <Row> 
+                    <Row className="header-image "> 
                         <Col> 
                             <Row >
                                 <Col className="d-flex justify-content-start">
-                                    <img src="https://react-bootstrap.github.io/logo.svg" width="30" height="30" className="d-inline-block align-top" alt="React Bootstrap logo"/> 
+                                    <img src="https://react-bootstrap.github.io/logo.svg" width="30" height="30" className="d-inline-block align-top" alt="React Bootstrap logo"/>
                                 </Col>
                                 <Col className="d-flex justify-content-end">
                                     <Link className="btn btn-primary" to="/login">Login</Link>
                                 </Col>
                             </Row>
-
-                            <div className="mt-5">
-                                <div >
-                                    <h1>Film, serie TV e tanto altro. Senza limiti.</h1>
+                            <Card.Body className="header-color">
+                            <div className="mt-5 bg bg-dark bordo">
+                                <div>
+                                    <h1 >Film, serie TV e tanto altro. Senza limiti.</h1>
                                 </div>  
                                 <div>
                                     <h2 className="mt-3">Guarda ciò che vuoi ovunque. Disdici quando vuoi.</h2>
@@ -32,11 +32,12 @@ export default function Header () {
                                     <Link to="/login" className="btn btn-danger"> Click </Link>     
                                 </div>
                             </div>
+                            </Card.Body> 
                         </Col>
                     </Row>
                     <Row className="mt-5">
-                        <Col>
-                            <img src="" alt="QUALCOSA" />
+                        <Col className="prova">
+                            {/* <img src="/src/img/35228.jpg" alt="QUALCOSA" /> */}
                         </Col>
                         <Col>
                             <div>

@@ -45,4 +45,27 @@
   color: white;
 }
 
+.header-image{
+  background-image: url(/src/img/progetto-senza-titolo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  
+}
+.header-color{
+  backdrop-filter: blur(4px);
+  margin-top: 10px;
+  border-radius: 20px;
+}
 
+.prova{
+  background-image: url(/src/img/35228.jpg);
+  height: 400px;
+  background-size: cover;
+}
+
+.bordo{
+  border-radius: 100px;
+  opacity: 0.8;
+
+}
