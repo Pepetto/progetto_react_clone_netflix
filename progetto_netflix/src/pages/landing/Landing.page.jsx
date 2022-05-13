@@ -8,7 +8,7 @@ import Header from "../../components/Header/Header.component";
 
 export default function Landing() {
   return (
-    <div>
+    <div className="landing">
       <Header />
       <AccordionLanding/>
       <Footer />
