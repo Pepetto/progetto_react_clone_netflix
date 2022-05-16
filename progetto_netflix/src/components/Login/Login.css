@@ -1,19 +1,20 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Palanquin+Dark:wght@600&display=swap');
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: 'Arvo', serif;
-    ;
+
+.sfondologin{
+    /* background-image: url(/public/img/progetto-senza-titolo.png); */
+    background-image: url(/public/img/progetto-senza-titolo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;    
 }
 
-body{
-    display:flex;
-    justify-content: center;
-    background-image: url(../../../public/img/progetto-senza-titolo.png);
-    color: #fff;
-}
-
+  .cardLogin{
+      height: 600px;
+      width: 600px;
+      background-color: rgba(0, 0, 0, 0.815) !important;
+      border: solid 1px;
+      border-radius: 10px;
+  }
+/* 
 .filter{
     background-color:#000; width: 100%; height: 100%; position: absolute; z-index: 0; opacity: 0.5;
 }
@@ -98,7 +99,7 @@ form .button input{
 }
 form .button input:hover{
     background: linear-gradient(-135deg, #71b7e6, #9b59b6);
-}  
+}   */
 /*----------------------
 Smartphone
 -----------------------*/

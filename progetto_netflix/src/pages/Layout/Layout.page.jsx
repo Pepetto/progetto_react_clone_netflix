@@ -70,7 +70,7 @@ const Layout = () => {
 };
 
 export default Layout;
-<Navbar bg="light" expand="lg">
+{/* <Navbar bg="light" expand="lg">
   <Container>
     <Navbar.Brand >
       <Link to="/">
@@ -98,4 +98,4 @@ export default Layout;
       </Nav>
     </Navbar.Collapse>
   </Container>
-</Navbar>
+</Navbar> */}
