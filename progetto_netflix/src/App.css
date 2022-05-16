@@ -46,21 +46,22 @@
 }
 
 .header-image{
-  background-image: url(/src/img/progetto-senza-titolo.png);
+  /* background-image: url(/public/img/progetto-senza-titolo.png); */
+  background:linear-gradient(45deg, rgb(2, 2, 2)50% ,rgba(0, 0, 0, 0))  ,url(/public/img/progetto-senza-titolo.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
   
 }
 .header-color{
-  backdrop-filter: blur(4px);
+  /* backdrop-filter: blur(4px); */
   margin-top: 10px;
   border-radius: 20px;
 }
 
 .prova{
-  background-image: url(/src/img/35228.jpg);
+  background-image: url(/public/img/35228.jpg);
   height: 400px;
   background-size: cover;
 }
@@ -74,3 +75,4 @@
 .altezza{
   height: 90vh;
 }
+
