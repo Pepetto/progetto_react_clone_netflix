@@ -70,11 +70,11 @@ export default function Header () {
                            <h3>Amazon Fire TV Dispositivi con Android TV Apple TV Chromecast TV LG Samsung </h3>
                         </Col>
                         <Col>
-                            <img src="img/original.png" alt="PC" />
+                            <img src= "../../img/original.png" alt="PC" />
                             <h3>Chrome OS MacOS PC Windows</h3>
                         </Col>
                         <Col>
-                            <img src="img/original.png" alt="Tablet" />
+                            <img src="../../img/original.png" alt="Tablet" />
                             <h3>Tablet Amazon Fire Telefoni e tablet Android iPhone e iPad</h3>
                         </Col>
                         <Col>
