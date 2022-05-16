@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function AccordionLanding () {
     return  <>
-                <Container className="mt-5 mb-3">
+                <Container className="mt-5 mb-3 altezzaHeader">
                 <Row>
                     <h2>Domande frequenti</h2>
                     <Col className="mt-5">

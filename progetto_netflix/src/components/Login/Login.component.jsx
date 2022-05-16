@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Login from "./Login.css";
+import "./Login.css" ;
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,7 @@ export default function Login () {
          <Container>
              <Row>
                  <Col>
-                 <div class="filter"></div>
+                 {/* <div class="filter"></div> */}
                     <div class="container">
                         <div class="title">REGISTRATI</div>
                         <form method="post">

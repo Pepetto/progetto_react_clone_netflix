@@ -34,7 +34,7 @@ export default function Header () {
                         <Col>
                             <img  className="img-fluid" src="../../img/35228.jpg" alt="QUALCOSA" />
                         </Col>
-                        <Col className="text-start ms-5 fs-4">
+                        <Col className="text-start ms-5 fs-4 altezzaHeader">
                             <div>
                                 <h2>Guarda come, quando e con chi vuoi</h2>
                             </div>
@@ -57,8 +57,8 @@ export default function Header () {
                         <Link to="" className="btn btn-info mt-5 mb-5 w-25 h-25 fs-2" >Abbonati</Link>
                         </div>
                     </Row>
-                    <h2>Disponibile sui tuoi dispositivi preferiti</h2>
-                    <Row xxl={4} xl={4} lg={4} md={2} sm={1} xs={1} className="mt-5">
+                    <h2 className="mt-5">Disponibile sui tuoi dispositivi preferiti</h2>
+                    <Row xxl={4} xl={4} lg={4} md={2} sm={1} xs={1} className="mt-5 altezzaHeader">
                         
                         <Col>
                         <img className="img-fluid" src="../../img/original.png" alt="TV" />
