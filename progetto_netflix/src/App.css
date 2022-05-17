@@ -50,7 +50,7 @@
   background:linear-gradient(45deg, rgb(2, 2, 2)50% ,rgba(0, 0, 0, 0))  ,url(/public/img/progetto-senza-titolo.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  /* height: 600px; */
   /* opacity: 0.9; */
   
 }
@@ -62,7 +62,7 @@
 
 .prova{
   background-image: url(/public/img/35228.jpg);
-  height: 400px;
+  /* height: 400px; */
   background-size: cover;
 }
 
