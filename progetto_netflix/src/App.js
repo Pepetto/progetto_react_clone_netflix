@@ -10,6 +10,7 @@ import Layout from "./pages/Layout/Layout.page";
 import Dashboard from "./pages/Dashboard/Dashboard.page";
 import Landing from "./pages/Landing/Landing.page";
 import Login from "./pages/Login/Login.page";
+import SceltaProfilo from "./pages/SceltaProfilo/SceltaProfilo.page";
 
 //
 export default function App() {
@@ -21,7 +22,8 @@ export default function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Dashboard />} />
             <Route path="login" element={<Login />} />
-            <Route paht="*" element={<h1>404</h1>} />
+            <Route path="profilo" element={<SceltaProfilo/>}/>
+            <Route path="*" element={<h1>404</h1>} />
           </Route>
         </Routes>
       </BrowserRouter>
