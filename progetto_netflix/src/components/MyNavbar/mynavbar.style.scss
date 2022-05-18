@@ -1,15 +1,17 @@
 .topbar {
   width: 100%;
   padding: 0 60px;
-  color: white;
+  color: rgb(17, 17, 17);
   font-size: 110%;
   position: fixed;
-  top: 0;
+  top: 0px;
   z-index: 999;
   background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
   transition: all 0.7s ease;
 
   &.scrolled {
+    position: fixed;
+    top: 0px;
     background-color: var(--main-color);
     transition: all 1s ease;
   }

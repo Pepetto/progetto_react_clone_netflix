@@ -61,7 +61,7 @@ export default function Featured({ category }) {
             </div>
           </div>
         </div>
-      ) : null}
+      ) : null}    
     </>
   );
 }

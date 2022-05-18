@@ -18,7 +18,7 @@ export default function HomePage() {
 
   return (
     <div className="home">
-      <MyNavbar />
+
 
       <Featured category={"discover/tv"} />
 

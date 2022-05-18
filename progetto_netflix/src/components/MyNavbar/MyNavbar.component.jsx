@@ -21,7 +21,7 @@ export default function MyNavbar() {
       collapseOnSelect
       expand="lg"
       variant="dark"
-      className={isScrolled ? "topbar scrolled" : "topbar"}
+      className={isScrolled ? "topbar scrolled" : "topbar "}
     >
       <Container className="mycontainer">
         <Navbar.Brand href="#home" className="left">

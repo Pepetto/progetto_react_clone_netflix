@@ -53,11 +53,11 @@ export default function Header () {
                                 </div>
                             </div>
                         </Col>
-                        <div>
+                        <div className="text-center">
                         <Link to="" className="btn btn-info mt-5 mb-5 w-25 fs-2" >Abbonati</Link>
                         </div>
                     </Row>
-                    <h2 className="mt-5">Disponibile sui tuoi dispositivi preferiti</h2>
+                    <h2 className="mt-5 text-center">Disponibile sui tuoi dispositivi preferiti</h2>
                     <Row xxl={4} xl={4} lg={4} md={2} sm={2} xs={2} className="mt-5 altezzaHeader">
                         
                         <Col>

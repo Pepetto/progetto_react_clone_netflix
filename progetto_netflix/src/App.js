@@ -7,25 +7,27 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // PAGES
 import HomePage from "./pages/HomePage/HomePage";
+import Landing from "./pages/Landing/Landing.page";
+import Login from "./pages/Login/Login.page";
+import SceltaProfilo from "./pages/SceltaProfilo/SceltaProfilo.page";
+import Layout from "./pages/Layout/Layout.page"
 
 //
 export default function App() {
   return (
-    <div className="App">
-      <HomePage />
+      
 
-      {/* <BrowserRouter>
-
+      <BrowserRouter>
         <Routes>
-          <Route path="landing" element={<Landing />} />
+        <Route path="landing" element={<Landing />} />
+        <Route path="login" element={<Login />} />
           <Route path="/" element={<Layout />}>
-            <Route index element={<Dashboard />} />
-            <Route path="login" element={<Login />} />
+            <Route path="homePage" element={<HomePage />} />
             <Route path="profilo" element={<SceltaProfilo/>}/>
             <Route path="*" element={<h1>404</h1>} />
           </Route>
         </Routes>
-      </BrowserRouter> */}
-    </div>
+      </BrowserRouter> 
+
   );
 }

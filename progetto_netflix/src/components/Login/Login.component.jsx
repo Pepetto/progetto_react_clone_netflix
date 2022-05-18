@@ -9,7 +9,7 @@ export default function Login () {
             <Container fluid className="sfondologin">
                  <Row className="justify-content-center">
                      <Col className="d-flex justify-content-center mt-5">
-                        <Card className="cardLogin">
+                        <Card className="cardLogin text-center">
                             <Card.Title>
                                 <h1 className="mt-3">Accedi</h1>
                             </Card.Title>

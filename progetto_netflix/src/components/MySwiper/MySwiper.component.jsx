@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import CardItem from "../CardItem/CardItem.component";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Keyboard, Pagination, Navigation } from "swiper";
+import { Keyboard, Pagination, Navigation, Zoom } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./myswiper.style.scss";
+import { Col, Container, Row, Card } from "react-bootstrap";
 
 export default function MySwiper(props) {
   const { sliderName, category } = props;
@@ -27,11 +28,14 @@ export default function MySwiper(props) {
   // console.log(list);
 
   return (
-    <div>
-      <h3>{sliderName}</h3>
+    <Card className="bg bg-transparent border-1 border-top mt-3 card-size">
+      <h2>Titolo</h2>
+    <Container>
+
+      {/* <h3>{sliderName}</h3> */}
       <Swiper
-        spaceBetween={5}
-        slidesPerView={6}
+        spaceBetween={50}
+        slidesPerView={5}
         onSlideChange={() => console.log("slide change")}
         keyboard={{
           enabled: true,
@@ -40,15 +44,22 @@ export default function MySwiper(props) {
           clickable: true,
         }}
         navigation={true}
-        modules={[Keyboard, Pagination, Navigation]}
-        className="mySwiper"
+        modules={[Keyboard, Navigation, Zoom]}
+        className="mySwiper mt-5 pt-5"
       >
-        {list.map((element) => (
-          <SwiperSlide key={element.id}>
-            <CardItem key={element.id} list={element} />
-          </SwiperSlide>
-        ))}
+
+          {list.map((element) => (
+
+              <SwiperSlide key={element.id} >
+
+                <CardItem key={element.id} list={element} />
+
+              </SwiperSlide>
+
+          ))}
+
       </Swiper>
-    </div>
+    </Container>
+    </Card>
   );
 }
