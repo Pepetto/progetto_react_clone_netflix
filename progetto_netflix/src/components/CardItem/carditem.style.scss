@@ -44,3 +44,8 @@
   background-image: url(https://media.giphy.com/media/lgcUUCXgC8mEo/giphy.gif),
     url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg/320px-Arrestbygningen_ved_r%C3%A5d-_og_domhuset.jpg);
 }
+
+.modal-dialog{
+  max-width: none !important;
+  width: 1000px !important;
+}

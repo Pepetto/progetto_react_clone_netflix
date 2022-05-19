@@ -29,10 +29,11 @@ export default function MySwiper(props) {
 
   return (
     <Card className="bg bg-transparent border-1 border-top mt-3 card-size">
-      <h2>Titolo</h2>
+      <h3 className="text-white">{sliderName}</h3>
+      {/* {console.log(sliderName)} */}
+      
     <Container>
 
-      {/* <h3>{sliderName}</h3> */}
       <Swiper
         spaceBetween={50}
         slidesPerView={5}

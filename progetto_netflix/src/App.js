@@ -25,6 +25,8 @@ export default function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route path="landing" element={<Landing />} />
+          <Route path="login" element={<Login />} />
           <Route path="/" element={<MyNavbar />}>
             <Route index element={<HomePage />} />
             <Route path="series" element={<PaginaTV type={"tv"} />} />
