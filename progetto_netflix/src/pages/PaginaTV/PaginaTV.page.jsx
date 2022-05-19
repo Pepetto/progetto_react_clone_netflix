@@ -2,6 +2,7 @@ import React from "react";
 import Featured from "../../components/Featured/Featured.component";
 import MySwiper from "../../components/MySwiper/MySwiper.component";
 
+
 export default function PaginaTV({ type }) {
   // console.log(type);
   const genres = [
@@ -72,7 +73,7 @@ export default function PaginaTV({ type }) {
   ];
 
   return (
-    <div className="paginaTV">
+    <div className="bg bg-dark">
       <Featured category={`discover/${type}`} />
       {genres.map((element) => (
         <MySwiper
