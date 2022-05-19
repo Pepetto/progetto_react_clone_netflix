@@ -31,13 +31,11 @@ export default function SearchBox() {
           <Search />
         </button>
       </form>
-      <ul>
-        {resultList.map((element) => (
-          <li>
-            <CardItem list={element} />
-          </li>
-        ))}
-      </ul>
+
+      {resultList.map((element) => (
+        <CardItem list={element} />
+      ))}
+
       {/* <SearchList results={resultList} /> */}
     </div>
   );
