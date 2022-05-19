@@ -34,7 +34,7 @@ export default function Featured({ category }) {
     first_air_date,
     release_date,
   } = firstElement;
-  const imagePath = "https://image.tmdb.org/t/p/w500";
+  const imagePath = "https://image.tmdb.org/t/p/w1280";
 
   return (
     <>
@@ -61,7 +61,7 @@ export default function Featured({ category }) {
             </div>
           </div>
         </div>
-      ) : null}    
+      ) : null}
     </>
   );
 }
