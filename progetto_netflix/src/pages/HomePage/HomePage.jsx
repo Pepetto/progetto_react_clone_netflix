@@ -23,7 +23,7 @@ export default function HomePage() {
       <Featured category={"discover/tv"} />
 
       {homeSliders.map((slider) => (
-        <MySwiper cliderName={slider.sliderName} category={slider.category} />
+        <MySwiper sliderName={slider.sliderName} category={slider.category} />
       ))}
     </div>
   );
