@@ -73,7 +73,7 @@ export default function PaginaTV({ type }) {
   ];
 
   return (
-    <div className="paginaTV">
+    <div className="bg bg-dark">
       <MyNavbar />
       <Featured category={`discover/${type}`} />
       {genres.map((element) => (

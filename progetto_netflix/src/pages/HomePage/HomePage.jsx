@@ -15,6 +15,38 @@ export default function HomePage() {
       sliderName: "Serie TV acclamate",
       category: "discover/tv",
     },
+    {
+      sliderName: "Serie TV acclamate",
+      category: "discover/tv",
+    },
+    {
+      sliderName: "Serie TV acclamate",
+      category: "discover/tv",
+    },
+    {
+      sliderName: "Serie TV acclamate",
+      category: "discover/tv",
+    },
+    {
+      sliderName: "Serie TV acclamate",
+      category: "discover/tv",
+    },
+    {
+      sliderName: "Serie TV acclamate",
+      category: "discover/tv",
+    },
+    {
+      sliderName: "Serie TV acclamate",
+      category: "discover/tv",
+    },
+    {
+      sliderName: "Serie TV acclamate",
+      category: "discover/tv",
+    },
+    {
+      sliderName: "Serie TV acclamate",
+      category: "discover/tv",
+    },
   ];
 
   return (

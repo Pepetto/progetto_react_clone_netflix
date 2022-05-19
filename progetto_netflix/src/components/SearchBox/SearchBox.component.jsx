@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Search } from "@material-ui/icons";
+import { Row, Col, Form } from "react-bootstrap";
 
 import CardItem from "../CardItem/CardItem.component";
+import { Container } from "react-bootstrap";
+import { Input } from "@mui/material";
 const axios = require("axios").default;
 
 export default function SearchBox() {
@@ -24,18 +27,24 @@ export default function SearchBox() {
   console.log(resultList);
 
   return (
-    <div>
-      <form onSubmit={searchElement}>
-        <input type="text" onChange={(e) => setSearchField(e.target.value)} />
-        <button type={"submit"}>
-          <Search />
+    <div  className="mt-5" >
+      <Form onSubmit={searchElement} >
+        <Input className="text-light" type="text" onChange={(e) => setSearchField(e.target.value)} />
+        <button type={"submit"} className="rounded-circle bg bg-dark">
+          <Search className="bg bg-dark" />
         </button>
-      </form>
+      </Form>
+        <Container className="mb-5">
+          <Row className="mt-5" >
+              {resultList.map((element) => (
+                  <Col xxl={3} xl={4} lg={4} md={6} sm={6} xs={6} className="mt-5" >
 
-      {resultList.map((element) => (
-        <CardItem list={element} />
-      ))}
+                            <CardItem className="" list={element} />
 
+                  </Col>
+              ))}
+          </Row>
+        </Container>
       {/* <SearchList results={resultList} /> */}
     </div>
   );

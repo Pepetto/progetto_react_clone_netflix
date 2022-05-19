@@ -14,8 +14,7 @@ import PaginaFilm from "./pages/PaginaTV/PaginaTV.page";
 //
 import Landing from "./pages/Landing/Landing.page";
 import Login from "./pages/Login/Login.page";
-import SceltaProfilo from "./pages/SceltaProfilo/SceltaProfilo.page";
-import Layout from "./pages/Layout/Layout.page";
+
 import SearchList from "./pages/SearchList/SearchList";
 
 //

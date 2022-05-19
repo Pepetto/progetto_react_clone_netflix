@@ -11,7 +11,9 @@ export default function Header() {
           <Col>
             <Row className="mt-3">
               {/* <img className="img-fluid" src="" alt="QUALCOSA" /> */}
-              <a href="/movies" className="container">
+
+              {/*  BOTTONE ACCEDI CHE PORTA A MOVIE */}
+              <a href="/home" className="container">
                 <Button variant="contained" color="success">
                   Accedi
                 </Button>
