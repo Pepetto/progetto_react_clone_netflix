@@ -27,24 +27,26 @@ export default function SearchBox() {
   console.log(resultList);
 
   return (
-    <div  className="mt-5" >
-      <Form onSubmit={searchElement} >
-        <Input className="text-light" type="text" onChange={(e) => setSearchField(e.target.value)} />
+    <div className="mt-5">
+      <Form onSubmit={searchElement}>
+        <Input
+          className="text-light"
+          type="text"
+          onChange={(e) => setSearchField(e.target.value)}
+        />
         <button type={"submit"} className="rounded-circle bg bg-dark">
           <Search className="bg bg-dark" />
         </button>
       </Form>
-        <Container className="mb-5">
-          <Row className="mt-5" >
-              {resultList.map((element) => (
-                  <Col xxl={3} xl={4} lg={4} md={6} sm={6} xs={6} className="mt-5" >
-
-                            <CardItem className="" list={element} />
-
-                  </Col>
-              ))}
-          </Row>
-        </Container>
+      <Container className="mb-5">
+        <Row className="mt-5">
+          {resultList.map((element) => (
+            <Col xxl={3} xl={4} lg={4} md={6} sm={6} xs={6} className="mt-5">
+              <CardItem className="" list={element} />
+            </Col>
+          ))}
+        </Row>
+      </Container>
       {/* <SearchList results={resultList} /> */}
     </div>
   );

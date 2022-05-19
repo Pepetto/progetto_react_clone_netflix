@@ -33,7 +33,6 @@ export default function MySwiper(props) {
         <h3 className="text-white mt-3 ms-3">{sliderName}</h3>
         {/* {console.log(sliderName)} */}
       </div>
-
       <Container>
         <Swiper
           spaceBetween={50}
