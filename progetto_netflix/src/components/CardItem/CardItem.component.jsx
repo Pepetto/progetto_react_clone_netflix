@@ -83,7 +83,12 @@ export default function CardItem({ list }) {
       <div className="square mb-5 ms-5 ps-5">
         <Card.Img fluid variant="top" src={imagePath} className="cover" />
         <Card.Text className="text">
-          <IconButton variant="info" className="text-white" size="small" onClick={handleShow}>
+          <IconButton
+            variant="info"
+            className="text-white"
+            size="small"
+            onClick={handleShow}
+          >
             dettagli
           </IconButton>
           <span className="d-flex justify-content-start">

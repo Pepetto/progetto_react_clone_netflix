@@ -1,7 +1,6 @@
 import Featured from "../../components/Featured/Featured.component";
 import MyNavbar from "../../components/MyNavbar/MyNavbar.component";
 import MySwiper from "../../components/MySwiper/MySwiper.component";
-import SearchBox from "../../components/SearchBox/SearchBox.component";
 
 import "./homepage.style.scss";
 
@@ -12,47 +11,40 @@ export default function HomePage() {
       category: "discover/movie",
     },
     {
-      sliderName: "Serie TV acclamate",
+      sliderName: "Serie TV bellissime",
       category: "discover/tv",
     },
     {
-      sliderName: "Serie TV acclamate",
-      category: "discover/tv",
+      sliderName: "Grandi d'Animazione",
+      category: "discover/movie/genre?genre=16",
     },
     {
-      sliderName: "Serie TV acclamate",
-      category: "discover/tv",
+      sliderName: "Fantasia portami via",
+      category: "discover/tv/genre?genre=10765",
     },
     {
-      sliderName: "Serie TV acclamate",
-      category: "discover/tv",
+      sliderName: "Avventura senza paura",
+      category: "discover/tv/genre?genre=10759",
     },
     {
-      sliderName: "Serie TV acclamate",
-      category: "discover/tv",
+      sliderName: "Ridere fa bene",
+      category: "discover/movie/genre?genre=35",
     },
     {
-      sliderName: "Serie TV acclamate",
-      category: "discover/tv",
+      sliderName: "E’ stato il maggiordomo",
+      category: "discover/movie/genre?genre=80",
     },
+
     {
-      sliderName: "Serie TV acclamate",
-      category: "discover/tv",
-    },
-    {
-      sliderName: "Serie TV acclamate",
-      category: "discover/tv",
-    },
-    {
-      sliderName: "Serie TV acclamate",
-      category: "discover/tv",
+      sliderName: "Thriller che non sembrano ma fidati",
+      category: "discover/movie/genre?genre=53",
     },
   ];
 
   return (
     <div className="home">
       <MyNavbar />
-      <Featured category={"discover/tv"} />
+      <Featured category={"discover/movie/genre?genre=16"} index={3} />
 
       {homeSliders.map((slider) => (
         <MySwiper sliderName={slider.sliderName} category={slider.category} />

@@ -1,25 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
 .featured {
-  height: 85vh;
+  height: 80vh;
   position: relative;
-
-  .category {
-    position: absolute;
-    top: 80px;
-    left: 50px;
-    font-size: 20px;
-    font-weight: 300;
-    color: white;
-    display: flex;
-    align-items: center;
-
-    select {
-      cursor: pointer;
-      background-color: var(--main-color);
-      color: white;
-      margin-left: 20px;
-      font-weight: 300;
-    }
-  }
+  font-family: "Roboto", sans-serif;
 
   img {
     height: 100%;
@@ -48,7 +32,7 @@
     .element_oveview {
       margin: 20px 0px;
       font-size: 16px;
-      font-weight: 400;
+      font-weight: 350;
     }
 
     .buttons {
@@ -66,7 +50,7 @@
 
         &.play {
           background-color: #fff;
-          color: var(--main-color);
+          color: black;
         }
 
         &.more {

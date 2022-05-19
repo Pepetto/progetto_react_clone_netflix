@@ -88,7 +88,7 @@ export default function PaginaFilm({ type }) {
   return (
     <div className="bg bg-dark">
       <MyNavbar />
-      <Featured category={`discover/${type}`} />
+      <Featured category={`discover/${type}`} index={0} />
       {genres.map((element) => (
         <MySwiper
           key={element.id}

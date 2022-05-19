@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import CardItem from "../CardItem/CardItem.component";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Keyboard, Pagination, Navigation, Zoom } from "swiper";
+import { Keyboard, Navigation, Zoom } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./myswiper.style.scss";
-import { Col, Container, Row, Card } from "react-bootstrap";
+import { Container, Card } from "react-bootstrap";
 
 export default function MySwiper(props) {
   const { sliderName, category } = props;

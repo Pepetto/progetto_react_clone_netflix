@@ -4,7 +4,7 @@ import PlayCircleOutlineOutlinedIcon from "@mui/icons-material/PlayCircleOutline
 
 import "./featured.style.scss";
 
-export default function Featured({ category }) {
+export default function Featured({ category, index }) {
   // passare category cosi da fetchare i dati a seconda della pagina
   const [firstElement, setFirstElement] = useState([]);
   //
@@ -16,7 +16,7 @@ export default function Featured({ category }) {
     await fetch(`http://localhost:2000/${category}`)
       .then((response) => response.json())
       .then((data) => {
-        setFirstElement(data[0]);
+        setFirstElement(data[index]);
       });
   };
 
@@ -24,11 +24,11 @@ export default function Featured({ category }) {
 
   const {
     backdrop_path,
-    genre_ids,
-    id,
+    // genre_ids,
+    // id,
     overview,
-    poster_path,
-    vote_avarage,
+    // poster_path,
+    // vote_avarage,
     title,
     name,
     first_air_date,
@@ -38,7 +38,7 @@ export default function Featured({ category }) {
 
   return (
     <>
-      {firstElement.length != 0 ? (
+      {firstElement.length !== 0 ? (
         <div className="featured">
           <img width={"100%"} src={`${imagePath}${backdrop_path}`} alt="" />
           <div className="info">

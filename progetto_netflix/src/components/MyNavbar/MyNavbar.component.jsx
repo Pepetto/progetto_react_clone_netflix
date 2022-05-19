@@ -1,14 +1,6 @@
 import React, { useState } from "react";
-import {
-  Navbar,
-  Container,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
-import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
+import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { Notifications, Search } from "@material-ui/icons";
 
 import "./mynavbar.style.scss";
 import { Outlet } from "react-router-dom";
@@ -44,7 +36,7 @@ export default function MyNavbar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/home">Home</Nav.Link>
+              {/* <Nav.Link href="/home">Home</Nav.Link> */}
               <Nav.Link href="/series">Series</Nav.Link>
               <Nav.Link href="/movies">Movies</Nav.Link>
               <Nav.Link>New and Popular</Nav.Link>
@@ -65,7 +57,7 @@ export default function MyNavbar() {
 
               {/* PROFILE PHOTO */}
               <Nav.Link eventKey={3}>
-                <img src={profilePhoto} />
+                <img alt="Profile" src={profilePhoto} />
               </Nav.Link>
 
               <NavDropdown id="collasible-nav-dropdown">
