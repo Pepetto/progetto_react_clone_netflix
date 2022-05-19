@@ -16,6 +16,7 @@ import Landing from "./pages/Landing/Landing.page";
 import Login from "./pages/Login/Login.page";
 import SceltaProfilo from "./pages/SceltaProfilo/SceltaProfilo.page";
 import Layout from "./pages/Layout/Layout.page";
+import SearchList from "./pages/SearchList/SearchList";
 
 //
 export default function App() {
@@ -29,6 +30,8 @@ export default function App() {
             <Route index element={<HomePage />} />
             <Route path="series" element={<PaginaTV type={"tv"} />} />
             <Route path="movies" element={<PaginaFilm type={"movie"} />} />
+            <Route path="search" element={<SearchList />} />
+
             {/* <Route path="movies" element={<HomePage type={"movie"} />} /> */}
           </Route>
         </Routes>

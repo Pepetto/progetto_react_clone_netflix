@@ -1,6 +1,7 @@
 import Featured from "../../components/Featured/Featured.component";
 import MyNavbar from "../../components/MyNavbar/MyNavbar.component";
 import MySwiper from "../../components/MySwiper/MySwiper.component";
+import SearchBox from "../../components/SearchBox/SearchBox.component";
 
 import "./homepage.style.scss";
 
@@ -18,8 +19,7 @@ export default function HomePage() {
 
   return (
     <div className="home">
-
-
+      {/* <SearchBox /> */}
       <Featured category={"discover/tv"} />
 
       {homeSliders.map((slider) => (

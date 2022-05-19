@@ -1,21 +1,13 @@
-import React,{useState} from "react";
-import MyNavbar from "./MyNavbar/MyNavbar.component";
-import Searching from "./Search/Searching";
-export default function ListaMovie () {
+import React from "react";
+import SearchBox from "../../components/SearchBox/SearchBox.component";
 
-    return(
-        <>
-            <MyNavbar/>
-            <div class="page">
-                <Searching />
-                    <div class="contenitore">
-                        
-                        
-                            
-                                {/* <MovieCard title="Erik" rating="9.8" descrizione="Banane gialle "/> */}
-                    
-                    </div>
-            </div>
-        </>
-    )
+//
+export default function SearchList({ resultList }) {
+  return (
+    <div className="page">
+      <div className="contenitore">
+        <SearchBox />
+      </div>
+    </div>
+  );
 }

@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import {
+  Navbar,
+  Container,
+  Nav,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
+} from "react-bootstrap";
 import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
 
 import "./mynavbar.style.scss";
@@ -26,7 +34,7 @@ export default function MyNavbar() {
         className={isScrolled ? "topbar scrolled" : "topbar "}
       >
         <Container className="mycontainer">
-          <Navbar.Brand href="#home" className="left">
+          <Navbar.Brand href="/" className="left">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
               alt="icon"
@@ -44,8 +52,10 @@ export default function MyNavbar() {
             </Nav>
             <Nav className="right">
               {/* SEARCHBOX */}
-              <Nav.Link>
-                <Search className="icon" />
+
+              <Nav.Link href="/search">
+                <Search />
+                {/* <SearchBox /> */}
               </Nav.Link>
 
               {/* NOTIFICATIONS */}
