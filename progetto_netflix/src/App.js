@@ -26,16 +26,17 @@ export default function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="landing" element={<Landing />} />
+          {/* LOGIN E LANDING */}
           <Route path="login" element={<Login />} />
-          <Route path="/" element={<MyNavbar />}>
-            <Route index element={<HomePage />} />
-            <Route path="series" element={<PaginaTV type={"tv"} />} />
-            <Route path="movies" element={<PaginaFilm type={"movie"} />} />
-            <Route path="search" element={<SearchList />} />
+          <Route path="/" element={<Landing />} />
 
-            {/* <Route path="movies" element={<HomePage type={"movie"} />} /> */}
-          </Route>
+          {/* PAGINE DELLA DASHBOARD */}
+          <Route path="home" element={<HomePage />} />
+          <Route path="series" element={<PaginaTV type={"tv"} />} />
+          <Route path="movies" element={<PaginaFilm type={"movie"} />} />
+          <Route path="search" element={<SearchList />} />
+
+          {/* <Route path="movies" element={<HomePage type={"movie"} />} /> */}
         </Routes>
       </BrowserRouter>
     </div>

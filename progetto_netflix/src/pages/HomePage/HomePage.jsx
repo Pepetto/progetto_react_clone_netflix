@@ -19,7 +19,7 @@ export default function HomePage() {
 
   return (
     <div className="home">
-      {/* <SearchBox /> */}
+      <MyNavbar />
       <Featured category={"discover/tv"} />
 
       {homeSliders.map((slider) => (

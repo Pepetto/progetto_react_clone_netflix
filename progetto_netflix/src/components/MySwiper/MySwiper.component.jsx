@@ -31,36 +31,29 @@ export default function MySwiper(props) {
     <Card className="bg bg-transparent border-1 border-top mt-3 card-size">
       <h3 className="text-white">{sliderName}</h3>
       {/* {console.log(sliderName)} */}
-      
-    <Container>
 
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={5}
-        onSlideChange={() => console.log("slide change")}
-        keyboard={{
-          enabled: true,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Keyboard, Navigation, Zoom]}
-        className="mySwiper mt-5 pt-5"
-      >
-
+      <Container>
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={5}
+          onSlideChange={() => console.log("slide change")}
+          keyboard={{
+            enabled: true,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Keyboard, Navigation, Zoom]}
+          className="mySwiper mt-5 pt-5"
+        >
           {list.map((element) => (
-
-              <SwiperSlide key={element.id} >
-
-                <CardItem key={element.id} list={element} />
-
-              </SwiperSlide>
-
+            <SwiperSlide key={element.id}>
+              <CardItem key={element.id} list={element} />
+            </SwiperSlide>
           ))}
-
-      </Swiper>
-    </Container>
+        </Swiper>
+      </Container>
     </Card>
   );
 }

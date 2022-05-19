@@ -34,7 +34,7 @@ export default function MyNavbar() {
         className={isScrolled ? "topbar scrolled" : "topbar "}
       >
         <Container className="mycontainer">
-          <Navbar.Brand href="/" className="left">
+          <Navbar.Brand href="/home" className="left">
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
               alt="icon"
@@ -44,11 +44,11 @@ export default function MyNavbar() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/home">Home</Nav.Link>
               <Nav.Link href="/series">Series</Nav.Link>
               <Nav.Link href="/movies">Movies</Nav.Link>
-              <Nav.Link href="/new_and_popular">New and Popular</Nav.Link>
-              <Nav.Link href="/my_list">My List</Nav.Link>
+              <Nav.Link>New and Popular</Nav.Link>
+              <Nav.Link>My List</Nav.Link>
             </Nav>
             <Nav className="right">
               {/* SEARCHBOX */}

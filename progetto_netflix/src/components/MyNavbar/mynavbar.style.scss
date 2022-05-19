@@ -4,7 +4,8 @@
   font-size: 110%;
   position: fixed;
   top: 0px;
-
+  z-index: 999;
+  background: transparent;
   background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
   transition: all 0.7s ease;
 

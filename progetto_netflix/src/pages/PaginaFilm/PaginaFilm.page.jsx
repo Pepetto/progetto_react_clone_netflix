@@ -1,5 +1,6 @@
 import React from "react";
 import Featured from "../../components/Featured/Featured.component";
+import MyNavbar from "../../components/MyNavbar/MyNavbar.component";
 import MySwiper from "../../components/MySwiper/MySwiper.component";
 
 export default function PaginaFilm({ type }) {
@@ -85,6 +86,7 @@ export default function PaginaFilm({ type }) {
 
   return (
     <div className="paginaFilm">
+      <MyNavbar />
       <Featured category={`discover/${type}`} />
       {genres.map((element) => (
         <MySwiper
