@@ -28,7 +28,7 @@ export default function MySwiper(props) {
   // console.log(list);
 
   return (
-    <Card className="bg bg-transparent bordosezioni mt-3 card-size">
+    <Card className="bg bg-transparent bordosezioni mt-3 card-size border-0">
       <div className=" bordoswiper w-25">
         <h3 className="text-white mt-3 ms-3">{sliderName}</h3>
         {/* {console.log(sliderName)} */}

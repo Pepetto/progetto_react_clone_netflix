@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Search } from "@material-ui/icons";
-import { Row, Col, Form } from "react-bootstrap";
+import { Row, Col, Form, Button } from "react-bootstrap";
 
 import CardItem from "../CardItem/CardItem.component";
 import { Container } from "react-bootstrap";
@@ -34,9 +34,9 @@ export default function SearchBox() {
           type="text"
           onChange={(e) => setSearchField(e.target.value)}
         />
-        <button type={"submit"} className="rounded-circle bg bg-dark">
-          <Search className="bg bg-dark" />
-        </button>
+        <Button type={"submit"} className="rounded-circle bg bg-dark border-0">
+          <Search className="bg bg-dark  " />
+        </Button>
       </Form>
       <Container className="mb-5">
         <Row className="mt-5">
