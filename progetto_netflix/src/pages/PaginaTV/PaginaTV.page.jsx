@@ -5,7 +5,7 @@ import MySwiper from "../../components/MySwiper/MySwiper.component";
 
 export default function PaginaTV({ type }) {
   // console.log(type);
-  const genres = [
+  const genresTV = [
     {
       id: 10759,
       name: "Action & Adventure",
@@ -76,7 +76,7 @@ export default function PaginaTV({ type }) {
     <div className="bg bg-dark">
       <MyNavbar />
       <Featured category={`discover/${type}`} index={0} />
-      {genres.map((element) => (
+      {genresTV.map((element) => (
         <MySwiper
           key={element.id}
           sliderName={element.name}

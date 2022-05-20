@@ -50,7 +50,7 @@ export default function MySwiper(props) {
         >
           {list.map((element) => (
             <SwiperSlide key={element.id}>
-              <CardItem key={element.id} list={element} />
+              {element ? <CardItem key={element.id} list={element} /> : null}
             </SwiperSlide>
           ))}
         </Swiper>

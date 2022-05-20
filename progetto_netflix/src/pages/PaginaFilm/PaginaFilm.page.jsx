@@ -6,7 +6,7 @@ import "./paginaFilm.style.scss";
 
 export default function PaginaFilm({ type }) {
   // console.log(type);
-  const genres = [
+  const genreMovies = [
     {
       id: 28,
       name: "Azione",
@@ -89,13 +89,15 @@ export default function PaginaFilm({ type }) {
     <div className="bg bg-dark">
       <MyNavbar />
       <Featured category={`discover/${type}`} index={0} />
-      {genres.map((element) => (
-        <MySwiper
-          key={element.id}
-          sliderName={element.name}
-          category={`discover/${type}/genre?genre=${element.id}`}
-        />
-      ))}
+      {genreMovies.map((element) =>
+        element ? (
+          <MySwiper
+            key={element.id}
+            sliderName={element.name}
+            category={`discover/${type}/genre?genre=${element.id}`}
+          />
+        ) : null
+      )}
     </div>
   );
 }

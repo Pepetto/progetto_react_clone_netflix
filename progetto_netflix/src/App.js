@@ -1,11 +1,9 @@
 // PACKAGES
 import "./App.scss";
-import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 // COMPONENTS
-import MyNavbar from "./components/MyNavbar/MyNavbar.component";
 
 // PAGES
 import HomePage from "./pages/HomePage/HomePage";
@@ -29,7 +27,7 @@ export default function App() {
           {/* LOGIN E LANDING */}
           <Route path="login" element={<Login />} />
           <Route path="/" element={<Landing />} />
-          <Route path="/register" element={<Register />}/>
+          <Route path="/register" element={<Register />} />
           {/* PAGINE DELLA DASHBOARD */}
           <Route path="home" element={<HomePage />} />
           <Route path="series" element={<PaginaTV type={"tv"} />} />
