@@ -33,7 +33,7 @@ export default function Register () {
                                         <label  className="form-label">Repeat Password</label>
                                         <input type="password" className="form-control" />
                                     </div>
-                                    <button type="submit" className="btn btn-primary">Submit</button>
+                                    <Link to="/home" type="submit" className="btn btn-primary">Submit</Link>
                                 </form>
                             </Card.Body>
                         </Card>

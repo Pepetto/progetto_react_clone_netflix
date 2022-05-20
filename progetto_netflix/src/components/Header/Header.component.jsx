@@ -34,8 +34,8 @@ export default function Header() {
                   </h3>
                 </div>
                 <div>
-                  <input type="e-mail" className="w-25 text-dark"></input>
-                  <Link to="/login" className="btn btn-info">
+                  <input type="e-mail" className="w-25 text-dark rounded-pill"></input>
+                  <Link to="/login" className="btn btn-danger rounded-pill">
                     {" "}
                     Click{" "}
                   </Link>
@@ -82,7 +82,7 @@ export default function Header() {
             </div>
           </Col>
           <div className="text-center">
-            <Link to="/login" className="btn btn-info mt-5 mb-5 w-25 fs-2">
+            <Link to="/login" className="btn btn-info mt-5 mb-5 w-25 fs-2 rounded-pill">
               Abbonati
             </Link>
           </div>
@@ -101,14 +101,15 @@ export default function Header() {
         >
           <Col>
             <img className="img-fluid" src="../../img/original.png" alt="TV" />
-            <h3>
-              Amazon Fire TV Dispositivi con Android TV Apple TV Chromecast TV
+            <h3 className="mt-5">
+              Amazon Fire TV <br />
+               Dispositivi con:  Android TV, Apple TV, Chromecast TV,
               LG Samsung{" "}
             </h3>
           </Col>
           <Col>
             <img className="img-fluid" src="../../img/original1.png" alt="PC" />
-            <h3>Chrome OS MacOS PC Windows</h3>
+            <h3 className="mt-5">Chrome OS, MacOS PC, Windows</h3>
           </Col>
           <Col>
             <img
@@ -116,11 +117,11 @@ export default function Header() {
               src="../../img/original2.png"
               alt="Tablet"
             />
-            <h3>Tablet Amazon Fire Telefoni e tablet Android iPhone e iPad</h3>
+            <h3 className="mt-5">Tablet Amazon Fire Telefoni e tablet Android iPhone e iPad</h3>
           </Col>
           <Col>
             <img className="img-fluid" src="img/original3.png" alt="Consol" />
-            <h3>PS4 PS5 Xbox One Xbox Series X Xbox Series S</h3>
+            <h3 className="mt-5">PS4, PS5, Xbox, One Xbox Series X, Xbox Series S</h3>
           </Col>
         </Row>
       </Container>

@@ -24,7 +24,7 @@ export default function Login () {
                                         <label  className="form-label">Password</label>
                                         <input type="password" className="form-control" />
                                     </div>
-                                    <button type="submit" className="btn btn-primary">Submit</button>
+                                    <Link to="/home" type="submit" className="btn btn-primary">Submit</Link>
                                 </form>
                             </Card.Body>
                             <h5 className="mb-3">Prima volta su Netflex? </h5>
