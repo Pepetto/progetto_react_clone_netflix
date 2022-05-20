@@ -16,6 +16,7 @@ import Landing from "./pages/Landing/Landing.page";
 import Login from "./pages/Login/Login.page";
 
 import SearchList from "./pages/SearchList/SearchList";
+import Register from "./components/Register/Register.compenet";
 
 //
 export default function App() {
@@ -28,7 +29,7 @@ export default function App() {
           {/* LOGIN E LANDING */}
           <Route path="login" element={<Login />} />
           <Route path="/" element={<Landing />} />
-
+          <Route path="/register" element={<Register />}/>
           {/* PAGINE DELLA DASHBOARD */}
           <Route path="home" element={<HomePage />} />
           <Route path="series" element={<PaginaTV type={"tv"} />} />

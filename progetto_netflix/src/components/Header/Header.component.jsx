@@ -6,14 +6,14 @@ export default function Header() {
   return (
     <>
       <Container fluid>
-        <Row className="header-image altezza align-items-end  text-start">
+        <Row className="header-image altezza align-items-end  text-start ms-3">
           <Col>
             <Row className="mt-3">
               {/* <img className="img-fluid" src="" alt="QUALCOSA" /> */}
 
               {/*  BOTTONE ACCEDI CHE PORTA A MOVIE */}
-              <a href="/home" className="container">
-              <img className="img-fluid mb-3"  src={require('./text.png')}  alt="Logo"  width={100}
+              <a href="/home">
+              <img className="img-fluid mb-5"  src={require('./text.png')}  alt="Logo"  width={150}
               height={100}/>
               </a>
               <div>

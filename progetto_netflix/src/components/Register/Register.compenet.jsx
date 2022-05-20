@@ -1,20 +1,25 @@
 import React, {Component} from "react";
-import "./Login.css" ;
+import "./Register.style.scss";
 import { Button, Card, Col, Container, Row, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export default function Login () {
+export default function Register () {
     return (
         <>
-            <Container fluid className="sfondologin">
+            <Container fluid className="sfondoregister">
                  <Row className="justify-content-center">
                      <Col className="d-flex justify-content-center mt-5">
-                        <Card className="cardLogin text-center">
+                        <Card className="cardRegister text-center">
                             <Card.Title>
-                                <h1 className="mt-3">Accedi</h1>
+                                <h1 className="mt-3">Registrati</h1>
                             </Card.Title>
                             <Card.Body className=" d-flex justify-content-center mt-3" >
                                 <form className="w-50">
+                                    <div className="mb-3">
+                                        <label className="form-label">Usurname</label>
+                                        <input type="text" className="form-control" />
+
+                                    </div>
                                     <div className="mb-3">
                                         <label className="form-label">Email address</label>
                                         <input type="email" className="form-control" />
@@ -24,11 +29,13 @@ export default function Login () {
                                         <label  className="form-label">Password</label>
                                         <input type="password" className="form-control" />
                                     </div>
+                                    <div className="mb-3">
+                                        <label  className="form-label">Repeat Password</label>
+                                        <input type="password" className="form-control" />
+                                    </div>
                                     <button type="submit" className="btn btn-primary">Submit</button>
                                 </form>
                             </Card.Body>
-                            <h5 className="mb-3">Prima volta su Netflex? </h5>
-                            <Link to="/register" className="mb-5" >Registrati</Link>
                         </Card>
                     </Col>
                 </Row>
@@ -37,27 +44,3 @@ export default function Login () {
     )
 
 }
-
-
-{/* <div class="container">
-<div class="title">REGISTRATI</div>
-<form method="post">
-    <div class="user-details">
-        <div class="input-box">
-            <label for="text" class="details">User</label>
-            <input type="text" placeholder="User"/>
-        </div>
-        <div class="input-box">
-        <label for="Email" class="details">Email</label>
-        <input type="email" placeholder="marcorossi@email.com" />
-        </div>
-        <div class="input-box">
-        <label class="details">Password</label>
-        <input type="password"placeholder="Password"/>
-        </div>
-        <div class="button">
-            <input type="button" value="Invia"/>
-        </div>
-    </div>
-</form>
-</div> */}
