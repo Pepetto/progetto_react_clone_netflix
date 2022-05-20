@@ -1,7 +1,6 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Button } from "@mui/material";
 
 export default function Header() {
   return (
@@ -14,9 +13,8 @@ export default function Header() {
 
               {/*  BOTTONE ACCEDI CHE PORTA A MOVIE */}
               <a href="/home" className="container">
-                <Button variant="contained" color="success">
-                  Accedi
-                </Button>
+              <img className="img-fluid mb-3"  src={require('./text.png')}  alt="Logo"  width={100}
+              height={100}/>
               </a>
               <div>
                 <h1>Film, serie TV e tanto altro. Senza limiti.</h1>
@@ -27,7 +25,7 @@ export default function Header() {
                 </h2>
               </div>
             </Row>
-            <Card.Body className="header-color">
+            <Card.Body className=" px-0 header-color">
               <div className="mt-5">
                 <div>
                   <h3 className="mt-5">
@@ -36,8 +34,8 @@ export default function Header() {
                   </h3>
                 </div>
                 <div>
-                  <input type="e-mail" className="w-25"></input>
-                  <Link to="/login" className="btn btn-danger">
+                  <input type="e-mail" className="w-25 text-dark"></input>
+                  <Link to="/login" className="btn btn-info">
                     {" "}
                     Click{" "}
                   </Link>
@@ -50,11 +48,11 @@ export default function Header() {
           <Col>
             <img
               className="img-fluid"
-              src="../../img/35228.jpg"
-              alt="QUALCOSA"
+              src={require('./GifStreaming.gif')}
+              alt="gif streaming"
             />
           </Col>
-          <Col className="text-start ms-5 fs-4 altezzaHeader">
+          <Col className="text-start ms-5 fs-4 altezzaHeader text-fluid">
             <div>
               <h2>Guarda come, quando e con chi vuoi</h2>
             </div>
@@ -84,7 +82,7 @@ export default function Header() {
             </div>
           </Col>
           <div className="text-center">
-            <Link to="" className="btn btn-info mt-5 mb-5 w-25 fs-2">
+            <Link to="/login" className="btn btn-info mt-5 mb-5 w-25 fs-2">
               Abbonati
             </Link>
           </div>

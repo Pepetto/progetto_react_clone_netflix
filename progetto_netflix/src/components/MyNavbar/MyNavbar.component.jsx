@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Container, Nav, NavDropdown, Col} from "react-bootstrap";
 import { Notifications, Search } from "@material-ui/icons";
-
 import "./mynavbar.style.scss";
 import { Outlet } from "react-router-dom";
 
@@ -27,10 +26,10 @@ export default function MyNavbar() {
       >
         <Container className="mycontainer">
           <Navbar.Brand href="/home" className="left">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
-              alt="icon"
-            />
+            <Col>
+            <img className="img-fluid"  src={require('./text.png')}  alt="Logo"  width={100}
+            height={100}/>
+            </Col>
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

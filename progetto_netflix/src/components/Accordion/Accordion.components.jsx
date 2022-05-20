@@ -12,13 +12,13 @@ export default function AccordionLanding () {
                         <Accordion.Item eventKey="0" className="bg bg-dark">
                             <Accordion.Header >Che cos'è NETFLEX?</Accordion.Header>
                             <Accordion.Body>
-                            Disney è la casa dello streaming per l'intrattenimento di Disney, Pixar, Marvel, Star Wars, National Geographic, Star e molto altro. Disney+ offre vari vantaggi inclusi nel prezzo di abbonamento standard: <br/>
+                            NETFLEX è la casa dello streaming per l'intrattenimento di NETFLEX, Pixar, Marvel, Star Wars, National Geographic, Star e molto altro. NETFLEX offre vari vantaggi inclusi nel prezzo di abbonamento standard: <br/>
                             • Originals in esclusiva che non trovi da nessuna altra parte, film di grande successo, show da maratona, corti sfiziosi e documentari d'ispirazione <br/>
                             • Download multipli su un massimo di 10 dispositivi e fino a 7 profili diversi <br/>
                             • Streaming in formato 4K UHD con Dolby Vision and Dolby Atmos sui dispositivi compatibili senza costi aggiuntivi
                             • Un affidabile parental control con appositi profili bambini <br/>
                             • La possibilità di guardare su un massimo di 4 schermi contemporaneamente <br/>
-                            • La possibilità di organizzare visioni di gruppo per un massimo di 5 amici, abbonati a Disney+, con GroupWatch
+                            • La possibilità di organizzare visioni di gruppo per un massimo di 5 amici, abbonati a NETFLEX, con GroupWatch
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="1" className="bg bg-dark">
@@ -35,22 +35,22 @@ export default function AccordionLanding () {
                         <Accordion.Item eventKey="2" className="bg bg-dark">
                             <Accordion.Header>Quanto costa NETFLEX?</Accordion.Header>
                             <Accordion.Body>
-                            L'abbonamento Netflex costa 8,99 € al mese. In alternativa risparmia quasi 2 mesi con l'abbonamento annuale a 89,90 €*.<br/>
-                            Puoi anche acquistare un abbonamento annuale a Netflex da regalare a qualcun altro, qui.<br/>
+                            L'abbonamento NETFLEX costa 8,99 € al mese. In alternativa risparmia quasi 2 mesi con l'abbonamento annuale a 89,90 €*.<br/>
+                            Puoi anche acquistare un abbonamento annuale a NETFLEX da regalare a qualcun altro, qui.<br/>
                             *Risparmio calcolato rispetto all’abbonamento mensile. Risparmio di “quasi” due mesi per un arrotondamento di 0,10 €<br/>
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="3" className="bg bg-dark">
                             <Accordion.Header>Quali sono i dispositivi supportati?</Accordion.Header>
                             <Accordion.Body>
-                            Netflex supporta dispositivi mobili, browser web, console di gioco, set-top box e smart TV. Clicca qui per consultare la lista completa.
+                            NETFLEX supporta dispositivi mobili, browser web, console di gioco, set-top box e smart TV. Clicca qui per consultare la lista completa.
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="4" className="bg bg-dark">
                             <Accordion.Header>Registrandomi a NETFLEX mi assumo qualche impegno senza possibilità di disdetta?</Accordion.Header>
                             <Accordion.Body>
                             Non ci sono impegni a tempo indeterminato e puoi disdire quando vuoi, con validità a decorrere dal termine del periodo di fatturazione. Ti basta seguire questi 5 semplici passaggi:<br/>
-                            1. Vai su www.disneyplus.com e accedi<br/>
+                            1. Vai su www.NETFLEX.com e accedi<br/>
                             2. Seleziona il tuo Profilo<br/>
                             3. Seleziona Account<br/>
                             4. Seleziona Disdici abbonamento<br/>

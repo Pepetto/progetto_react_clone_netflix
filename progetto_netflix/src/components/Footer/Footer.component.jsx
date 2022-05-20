@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Footer () {
     return(
-        <div className='border-top border-danger border-5 mt-5'>
+        <div className='border-top border-info border-5 mt-5'>
             <footer class="container-fluid relative no-overflow mt-5">
                 <div class="container py-4 py-lg-5">
 
