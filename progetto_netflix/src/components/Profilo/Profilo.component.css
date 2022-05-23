@@ -1,0 +1,22 @@
+.profilo{
+    margin-left: 20%;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+    border: white solid 2px;
+}
+.profilo-text{
+    color: white;
+    margin-left: 26%;
+}
+
+.profilo:hover {
+    
+    border: aqua solid 3px;
+    transform: scale(1.1);
+    transition-duration: 0.6s;
+    border-radius: 100%;
+}
+
+

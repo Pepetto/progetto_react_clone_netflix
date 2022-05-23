@@ -1,82 +1,57 @@
 import Profilo from "../../components/Profilo/Profilo.component";
-import React, { useState } from "react";
-import Modal from "react-bootstrap/Modal";
-import { Button } from "react-bootstrap";
+import { Container, Row, Col, Navbar } from "react-bootstrap";
+import "../SceltaProfilo/SceltaProfilo.page.css";
 
 function SceltaProfilo() {
-  const [profili, setProfili] = useState([]);
-  const [newProfilo, setNewProfilo] = useState("");
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  const aggiungiElemento = () => {
-    const array = [...profili];
-    array.push(newProfilo);
-    setProfili({ profili: array });
-    console.log(newProfilo);
-  };
-
-  // rimuoviElemento =()=> {
-  //     console.log("deleted")
-
-  //     const myVect = [...this.state.cart]
-  //     myVect.pop()
-
-  //     this.setState({cart : myVect})
-  // }
-  console.log(newProfilo);
-
-  const onChangeText = (event) => {
-    setNewProfilo({ name: event.target.value });
-    console.log(event.target.value);
-  };
-  console.log(newProfilo);
-
-  const arrayProfili = [
-    {
-      name: "pedro",
-    },
-    {
-      name: "ugo",
-    },
-    {
-      name: "gino",
-    },
-  ];
-
   return (
-    <>
-      {profili.map((props) => (
-        <Profilo name={props.name} />
-      ))}
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button>
+    <div className="accedi">
+      <Container>
+      <Row>
+          <Col>
+            <img
+              className="img-fluid"
+              src={require("./text.png")}
+              alt="Logo"
+              width={100}
+              height={100}
+            />
+          </Col>
+          </Row>
+      </Container>
+    <div className="accedi">
+      <Container>
+        
 
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title className="text-dark">Aggiungi nuovo utente</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <form className="w-50">
-            <div className="mb-3">
-              <label className="form-label ">Usurname</label>
-              <input type="text" className="form-control text-dark" onChange={onChangeText}/>
-            </div>
-          </form>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={aggiungiElemento}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    </>
+        <Row className="margin">
+          <h1>Chi sta guardando?</h1>
+        </Row>
+
+        <Row>
+          <Col>
+            <Profilo
+              name="Adinolfi"
+              img="https://i.pinimg.com/736x/a3/46/be/a346bedc9c50e1776da06cf85158d528.jpg"
+              className="immagine-layout"
+            />
+          </Col>
+          <Col>
+            <Profilo
+              name="Roberto"
+              img="https://i.pinimg.com/originals/96/21/65/96216524958973ceffb8b7a2f29c9110.png"
+              className="immagine-layout"
+            />
+          </Col>
+          <Col>
+            <Profilo
+              name="Gianluca"
+              img="https://plantillasdememes.com/img/plantillas/mike-wazowski-con-cara-de-sullivan01578859264.jpg"
+              className="immagine-layout"
+            />
+          </Col>
+        </Row>
+      </Container>
+    </div>
+    </div>
   );
 }
 export default SceltaProfilo;

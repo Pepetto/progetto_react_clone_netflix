@@ -5,11 +5,11 @@ import Footer from "../../components/Footer/Footer.component"
 
 export default function LoginPage() {
   return (
-   <>
+   <div>
    <div className="loginColor">
     <Login/>
     <Footer/>
     </div>
-   </>
+   </div>
   );
 }

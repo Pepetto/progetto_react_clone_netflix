@@ -17,7 +17,7 @@ export default function MyNavbar() {
   };
 
   return (
-    <>
+    <div>
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -70,6 +70,6 @@ export default function MyNavbar() {
         </Container>
       </Navbar>
       <Outlet />
-    </>
+    </div>
   );
 }

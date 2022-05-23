@@ -1,20 +1,18 @@
 import React from "react";
-import { Component } from "react";
-import { Card } from "react-bootstrap";
+import "../Profilo/Profilo.component.css";
+import {Navbar} from 'react-bootstrap'
 
-function Profilo(props) {
-    
 
+const Profilo = (props) => {
   return (
-    <>
-      <Card style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={props.img} />
-        <Card.Body>
-          <Card.Title className="text-dark">{props.name}</Card.Title>
-          
-        </Card.Body>
-      </Card>
-    </>
+    <div>
+      <div >
+        <Navbar.Brand href="/home">
+        <img className="profilo" src={props.img}></img>
+        </Navbar.Brand>
+        <h1 className="profilo-text">{props.name}</h1>
+      </div>
+    </div>
   );
-}
+};
 export default Profilo;

@@ -7,13 +7,13 @@ import "./searchlist.scss";
 //
 export default function SearchList() {
   return (
-    <>
+    <div>
       <Container fluid className="text-center bg bg-dark">
         <Row>
           <MyNavbar />
           <SearchBox />
         </Row>
       </Container>
-    </>
+    </div>
   );
 }

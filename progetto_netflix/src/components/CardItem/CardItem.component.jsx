@@ -32,9 +32,9 @@ export default function CardItem({ list }) {
   const imagePath = `https://image.tmdb.org/t/p/w500${backdrop_path}`;
 
   return (
-    <>
+    <div>
       {backdrop_path ? (
-        <>
+        <div>
           <Modal
             className=""
             show={show}
@@ -111,8 +111,8 @@ export default function CardItem({ list }) {
               </div>
             </Card.Text>
           </div>
-        </>
+        </div>
       ) : null}
-    </>
+    </div>
   );
 }

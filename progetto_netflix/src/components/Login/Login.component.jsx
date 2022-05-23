@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Login () {
     return (
-        <>
+        <div>
             <Container fluid className="sfondologin">
                  <Row className="justify-content-center">
                      <Col className="d-flex justify-content-center mt-5">
@@ -24,7 +24,7 @@ export default function Login () {
                                         <label  className="form-label">Password</label>
                                         <input type="password" className="form-control" />
                                     </div>
-                                    <Link to="/home" type="submit" className="btn btn-primary">Submit</Link>
+                                    <Link to="/profilo" type="submit" className="btn btn-primary">Submit</Link>
                                 </form>
                             </Card.Body>
                             <h5 className="mb-3">Prima volta su Netflex? </h5>
@@ -33,7 +33,7 @@ export default function Login () {
                     </Col>
                 </Row>
             </Container>
-        </>
+        </div>
     )
 
 }

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Register () {
     return (
-        <>
+        <div>
             <Container fluid className="sfondoregister">
                  <Row className="justify-content-center">
                      <Col className="d-flex justify-content-center mt-5">
@@ -40,7 +40,7 @@ export default function Register () {
                     </Col>
                 </Row>
             </Container>
-        </>
+        </div>
     )
 
 }

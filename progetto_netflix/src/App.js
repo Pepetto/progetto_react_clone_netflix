@@ -10,11 +10,12 @@ import HomePage from "./pages/HomePage/HomePage";
 import PaginaTV from "./pages/PaginaTV/PaginaTV.page";
 import PaginaFilm from "./pages/PaginaTV/PaginaTV.page";
 //
-import Landing from "./pages/Landing/Landing.page";
+import Landing from "./pages/landing/Landing.page";
 import Login from "./pages/Login/Login.page";
 
 import SearchList from "./pages/SearchList/SearchList";
 import Register from "./components/Register/Register.compenet";
+import SceltaProfilo from "./pages/SceltaProfilo/SceltaProfilo.page"
 
 //
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="series" element={<PaginaTV type={"tv"} />} />
           <Route path="movies" element={<PaginaFilm type={"movie"} />} />
           <Route path="search" element={<SearchList />} />
+          <Route path="profilo" element={<SceltaProfilo/>}/>
 
           {/* <Route path="movies" element={<HomePage type={"movie"} />} /> */}
         </Routes>

@@ -37,7 +37,7 @@ export default function Featured({ category, index }) {
   const imagePath = "https://image.tmdb.org/t/p/w1280";
 
   return (
-    <>
+    <div>
       {firstElement.length !== 0 ? (
         <div className="featured">
           <img width={"100%"} src={`${imagePath}${backdrop_path}`} alt="" />
@@ -62,6 +62,6 @@ export default function Featured({ category, index }) {
           </div>
         </div>
       ) : null}
-    </>
+    </div>
   );
 }
